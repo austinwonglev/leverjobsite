@@ -1,0 +1,146 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+  }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  /* Style the header */
+
+.header {
+    max-width: 100%;
+    background: white;
+    background: transparent;
+    color: black;
+  }
+  
+  /* Page content */
+  .content {
+  }
+  
+  .header-section {
+    max-height: 6rem;
+    max-width: 100%;
+    margin: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .company-logo {
+      padding:1rem;
+      max-height: 4rem;
+  }
+
+  .section-1 {
+
+  }
+
+  .resources {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+  }
+
+  .nav-item {
+      margin: 0 10px;
+  }
+
+  .search {
+      font-weight: bold;
+  }
+
+  button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    transition: 0.3s;
+}
+    button.nav-item:hover {
+    color: gray; 
+}
+
+.section-1 {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 6rem;
+ background-color: #F9f9f9;
+ min-height: 20rem;
+}
+
+.section-2 {
+    text-align: center;
+    background-color: #f3faff;
+    padding: 10px;
+}
+
+.section-2-header {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 50px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.section-2-p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20pt;
+}
+
+.section-2-button {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.7143px;
+    letter-spacing: 1px;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #0c92f3;
+    padding: 10.5px 20px 10.5px 20px;
+    border-radius: 6px;
+}
+
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    background-color: #F9f9f9;
+    min-height: 20rem;
+   }
+
+button.section-2-button:hover {
+    background: #004a7f; 
+}
+
+.footer-section {
+    max-height: 10rem;
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #004a7f;
+    color: white;
+    padding: 1rem 5rem;
+  }
+
