@@ -1,3 +1,6 @@
+//variable declaration
+var key = config.MY_API_KEY;
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -22,7 +25,7 @@ $(document).ready(function(){
     $.ajax({
         url: "https://api.lever.co/v1/postings",
         type: "GET",
-        username: 'dXAGwHW7qPMpftWB8sXy70Xygb4XZaALy4nEKjHrp3HfbZMZ',
+        username: key,
         password: '',
         success: function(result){
             console.log(result);
