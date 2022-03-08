@@ -21,17 +21,34 @@ function myFunction() {
   }
 }
 
+// $(document).ready(function(){
+//     $.ajax({
+//         url: "https://apim.workato.com/austinw0/leverjobsite-v1/get-postings",
+//         type: "GET",
+//         username: '',
+//         password: '',
+//         success: function(result){
+//             console.log(result);
+//         },
+//         error:function(error){
+//             console.log(`Error`)
+//         }
+//     })
+// })
+
 $(document).ready(function(){
-    $.ajax({
-        url: "https://api.lever.co/v1/postings",
-        type: "GET",
-        username: key,
-        password: '',
-        success: function(result){
-            console.log(result);
-        },
-        error:function(error){
-            console.log(`Error`)
-        }
-    })
+  $.ajax({
+      url: "https://apim.workato.com/austinw0/leverjobsite-v1/get-postings",
+      type: "GET",
+      username: '',
+      password: '',
+      headers: { 'API-TOKEN': '3c3d5be1cbffe118c51595488e62d460973d119fad5c4eed1ceffe66e77e5591' },
+      success: function(result){
+          console.log(result);
+      },
+      error:function(error){
+          console.log(`Error`)
+      }
+  })
 })
+
